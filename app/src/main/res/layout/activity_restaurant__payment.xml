@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Restaurant_folder.Restaurant_Payment"
+    android:background="@drawable/ic_sim_card_alert_black_24dp"
+    android:id="@+id/relative">
+
+
+<!--    <include-->
+<!--        android:id="@+id/inclide"-->
+<!--        layout="@layout/action_bar2"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_width="match_parent"/>-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:text="Karibu kwenye mfumo wa malipo  \nTumeshindwa kutambua no yako"
+        android:textColor="@color/black1"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:id="@+id/title"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/inclide"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:text=""
+        android:textColor="@color/black1"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/firstcont"
+        android:layout_below="@+id/title"/>
+
+</RelativeLayout>
+

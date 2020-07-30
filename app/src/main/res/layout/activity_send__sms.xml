@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Restaurant_folder.Raustarant_Activities_page">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Charting page "
+        android:textColor="@color/black1"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/contimgv"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="10dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageButton"
+            android:src="@drawable/ic_person_black_24dp" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="380dp"
+        android:id="@+id/contedt1"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/contimgv"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText"
+                android:text="Sms To: 0620522562"
+                android:padding="10dp"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"/>
+
+
+            <EditText
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText2"
+                android:hint="Enter SMS"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:layout_marginTop="10dp"
+                android:background = "@drawable/addprod_border"
+                android:layout_gravity="center_horizontal" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:id="@+id/btnSendSMS"
+                android:layout_below="@+id/contedt1"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="right"
+                android:src="@drawable/ic_send_black_24dp"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+<!--    android:textColor="#ff87ff09"-->

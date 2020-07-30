@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Suplier_folder.Suppplier_Activity_page">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/egyptian"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="280dp"
+                android:background="@drawable/conner_radius"
+                android:backgroundTint="@color/blackpare"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="180dp"
+                        android:layout_height="150dp"
+                        android:background="@drawable/conner_radius"
+                        android:backgroundTint="@color/blackpare"
+                        android:visibility="visible"
+                        android:alpha="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_alignParentRight="true">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="130dp"
+                            android:layout_height="90dp"
+                            app:cardCornerRadius="10dp">
+
+                            <ImageView
+                                android:id="@+id/pasportimgv"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/ic_person_black_24dp"/>
+                        </androidx.cardview.widget.CardView>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                        <TextView
+                            android:onClick="change_pasport"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="change"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:padding="5dp"
+                            android:background="@drawable/addprod_border"
+                            android:textColor="@color/wight1"/>
+
+                            <TextView
+                                android:onClick="upload_pasport"
+                                android:layout_marginTop="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Upload"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:padding="5dp"
+                                android:background="@drawable/addprod_border"
+                                android:textColor="@color/wight1"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="170dp"
+                            android:layout_height="150dp"
+                            android:background="@drawable/conner_radius"
+                            android:backgroundTint="@color/blackpare"
+                            android:visibility="visible"
+                            android:alpha="1"
+                            android:gravity="center"
+                            android:onClick="today_order"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/ic_today_black_24dp"/>
+
+
+                            <TextView
+                                android:layout_marginTop="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="today order"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/wight1"/>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="170dp"
+                            android:layout_height="150dp"
+                            android:background="@drawable/conner_radius"
+                            android:backgroundTint="@color/blackpare"
+                            android:visibility="visible"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:src="@drawable/ic_add_black_24dp"
+                                android:onClick="add_product"/>
+
+
+                            <TextView
+                                android:layout_marginTop="0dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="add product"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/wight1"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="170dp"
+                            android:layout_height="150dp"
+                            android:background="@drawable/conner_radius"
+                            android:backgroundTint="@color/blackpare"
+                            android:visibility="visible"
+                            android:alpha="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/ic_assignment_turned_in_black_24dp"
+                                android:onClick="derivered_btn"/>
+
+                            <TextView
+                                android:layout_marginTop="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="derivered order"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/wight1"/>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="170dp"
+                            android:layout_height="150dp"
+                            android:background="@drawable/conner_radius"
+                            android:backgroundTint="@color/blackpare"
+                            android:visibility="visible"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:src="@drawable/ic_assignment_late_black_24dp"
+                                android:onClick="confirmed_order"/>
+
+
+                            <TextView
+                                android:layout_marginTop="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="confirmed order"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/wight1"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="170dp"
+                            android:layout_height="150dp"
+                            android:background="@drawable/conner_radius"
+                            android:backgroundTint="@color/blackpare"
+                            android:visibility="visible"
+                            android:alpha="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/ic_store_black_24dp"
+                                android:onClick="hostory_btn"/>
+
+
+                            <TextView
+                                android:layout_marginTop="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="History"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/wight1"/>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:onClick="aploaded_btn"
+                            android:layout_width="170dp"
+                            android:layout_height="150dp"
+                            android:background="@drawable/conner_radius"
+                            android:backgroundTint="@color/blackpare"
+                            android:visibility="visible"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/ic_arrow_upward_black_24dp"/>
+
+                            <TextView
+                                android:layout_marginTop="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Uploaded Product"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/wight1"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+

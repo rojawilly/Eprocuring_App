@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+   tools:context=".Suplier_folder.Supplier_Registration_form" >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="0dp"
+        android:id="@+id/imgviewcont">
+
+        <LinearLayout
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/conner_radius"
+            android:backgroundTint="@color/wight1"
+            >
+            <ImageView
+                android:id="@+id/imgview"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_event_available_black_24dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/text_dashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="8dp"
+        android:text="Sign Up"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="@color/black1"
+        android:layout_below="@+id/imgviewcont"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_below="@+id/text_dashboard"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:background="@drawable/conner_radius2"
+            android:hint="Supplier Name"
+            android:paddingLeft="30dp"
+            />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:background="@drawable/conner_radius2"
+            android:hint="Supplier Email"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="10dp"/>
+
+
+        <EditText
+            android:id="@+id/location"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:background="@drawable/conner_radius2"
+            android:hint="Location"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/phone_number"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:background="@drawable/conner_radius2"
+            android:hint="Phone number"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/Password"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:background="@drawable/conner_radius2"
+            android:hint="Password"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/Retypepassword"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:background="@drawable/conner_radius2"
+            android:hint="Re-Type Password"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/Description"
+            android:layout_width="280dp"
+            android:layout_height="70dp"
+            android:background="@drawable/radius_sign_us"
+            android:backgroundTint="@color/pareblack"
+            android:hint="Descriptions\nWrite inshort"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="40dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  I Accept the "
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Privacy Policy"
+                android:textColor="@color/bluepink"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" and"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Terms"
+                android:textColor="@color/bluepink"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:background="@drawable/nocolor_radius"
+            android:backgroundTint="@color/pareblack"
+            android:textColorHint="@color/black"
+            android:layout_marginBottom="5dp"
+            android:soundEffectsEnabled="true"
+            android:hint="Sign Up"
+            android:textStyle="bold"
+            android:onClick="Supplier_Signup_btn"/>
+    </LinearLayout>
+
+</RelativeLayout>

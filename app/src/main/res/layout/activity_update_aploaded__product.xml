@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".Suplier_folder.Update_aploaded_Product">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="340dp"
+    android:gravity="center"
+    android:id="@+id/cont">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="330dp"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="0dp">
+
+        <RelativeLayout
+            android:layout_width="350dp"
+            android:layout_height="330dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="280dp"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="2dp"
+                android:id="@+id/imgccard">
+
+                <ImageView
+                    android:id="@+id/update_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_person_black_24dp"
+                    android:background="@drawable/addprod_border"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_below="@+id/imgccard"
+                android:layout_marginTop="5dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="200dp"
+                    android:layout_height="45dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="1dp"
+                    android:layout_gravity="center">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:hint="Choose photo"
+                        android:textColorHint="@color/bluepink"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:onClick="choose_Photo"/>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="0dp"
+    android:gravity="center"
+    android:layout_below="@+id/cont">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="0dp">
+        <EditText
+            android:id="@+id/productname"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Product Name"
+            android:textColorHint="@color/bluepink"
+            android:paddingLeft="30dp"
+            android:background="@drawable/addprod_border"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="0dp"
+        android:layout_marginTop="10dp">
+        <EditText
+            android:id="@+id/productbrand"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Product Amount(kg/ltr/namber)"
+            android:textColorHint="@color/bluepink"
+            android:paddingLeft="30dp"
+            android:background="@drawable/addprod_border"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="0dp"
+        android:layout_marginTop="10dp">
+        <EditText
+            android:id="@+id/productprice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Product Price"
+            android:textColorHint="@color/bluepink"
+            android:paddingLeft="30dp"
+            android:background="@drawable/addprod_border"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="0dp"
+        android:layout_marginTop="10dp">
+        <EditText
+            android:id="@+id/product_descriptions"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Product descriptions"
+            android:textColorHint="@color/bluepink"
+            android:paddingLeft="30dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/addprod_border"/>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
+
+
+<androidx.cardview.widget.CardView
+    android:layout_width="200dp"
+    android:layout_height="45dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="1dp"
+    android:layout_gravity="center"
+    android:layout_marginBottom="10dp"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border"
+        android:textColorHint="@color/bluepink"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:hint="Upload Product"
+        android:onClick="updateproduct"/>
+</androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+
+

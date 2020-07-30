@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin_folder.Enable_Disable_Dupplier"
+    android:background="@drawable/home_page">
+
+
+    <RelativeLayout
+        android:id="@+id/cont1"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/radius_background"
+            android:backgroundTint="@color/black"
+            android:alpha="0.6">
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/suppliertitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/nocolor_radius"
+            android:textSize="20dp"
+            android:textColor="@color/Wight"
+            android:gravity="center"
+            android:padding="20dp"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/txtcontainer"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="70dp"
+        android:layout_below="@+id/cont1"
+        android:layout_centerHorizontal="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/radius_background"
+            android:backgroundTint="@color/black"
+            android:alpha="0.7">
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/storesupplier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/nocolor_radius"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            android:textStyle="normal"
+            android:text="No values"
+            android:padding="10dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/Wight"
+            android:gravity="center"
+            android:layout_centerInParent="true"/>
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/nocolor_radius"-->
+<!--            android:layout_below="@+id/storesupplier"-->
+<!--            android:textSize="20dp"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:text=""-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:textColor="@color/Wight"-->
+<!--            android:gravity="center"-->
+<!--            />-->
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/status_btn"
+        android:onClick="status_btn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint="Enable"
+        android:textColorHint="@color/Wight"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/txtcontainer"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/radius_sign_us"/>
+
+</RelativeLayout>

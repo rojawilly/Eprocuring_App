@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.eprocuring_app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Restaurant_folder.Send_SMS"></activity>
+        <activity android:name=".Restaurant_folder.Placed_order" />
+        <activity android:name=".Suplier_folder.History_page" />
+        <activity android:name=".Suplier_folder.Confirmed_Order" />
+
+        <receiver
+            android:name=".Procure_Class.SmsReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".Restaurant_folder.Restaurant_Payment" />
+        <activity android:name=".Suplier_folder.Derivered_order" />
+        <activity android:name=".Delete_Aploaded_Product" />
+        <activity android:name=".Admin_folder.Enable_Disable_Dupplier" />
+        <activity android:name=".Suplier_folder.Supplier_Payment" />
+        <activity android:name=".Admin_folder.List_Supplier_Added" />
+        <activity android:name=".Admin_folder.Add_Supplier_page" />
+        <activity android:name=".Admin_folder.Admin_Registration_Page" />
+        <activity android:name=".Admin_folder.Admin_form" />
+        <activity android:name=".Suplier_folder.Update_aploaded_Product" />
+        <activity android:name=".Suplier_folder.Aploaded_Praduct_Details" />
+        <activity android:name=".Suplier_folder.Aploaded_Products" />
+        <activity android:name=".Suplier_folder.Today_order_details" />
+        <activity android:name=".Suplier_folder.Today_Order" />
+        <activity android:name=".Suplier_folder.Add_Product" />
+        <activity android:name=".Restaurant_folder.Product_Details" />
+        <activity android:name=".Suplier_folder.Suppplier_Activity_page" />
+        <activity android:name=".Restaurant_folder.Raustarant_Activities_page" />
+        <activity android:name=".Restaurant_folder.Rastaurant_Registration_form" />
+        <activity android:name=".Suplier_folder.Supplier_Registration_form" />
+        <activity android:name=".Restaurant_folder.List_0f_Supliers" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".Procure_Class.Background_Service"
+            android:exported="false" />
+    </application>
+
+</manifest>

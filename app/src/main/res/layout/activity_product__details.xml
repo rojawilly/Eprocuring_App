@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Restaurant_folder.Product_Details">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/egyptian"
+        android:orientation="vertical"
+        android:paddingBottom="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:gravity="center"
+            android:layout_marginTop="5dp">
+
+            <RelativeLayout
+                android:layout_width="350dp"
+                android:layout_height="280dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/conner_radius"
+                    android:backgroundTint="@color/blackpare"
+                    android:alpha="0.3"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/product_imageview"
+                    android:layout_width="346dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/radius_sign_us"
+                    android:backgroundTint="@color/blackpare"
+                    android:src="@drawable/ic_person_black_24dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="335dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ScrollView
+                android:layout_width="350dp"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:layout_width="350dp"
+                        android:layout_height="150dp"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/border"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/conner_radius"
+                            android:backgroundTint="@color/blackpare"
+                            android:alpha="0.8"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/descriptiontxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="No data wait..."
+                                android:textSize="30dp"
+                                android:padding="10dp"
+                                android:textColor="@color/Wight"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginTop="5dp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="350dp"
+                        android:layout_height="150dp"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/conner_radius"
+                            android:backgroundTint="@color/blackpare"
+                            android:alpha="0.8"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:id="@+id/nametxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="No data wait..."
+                                android:textSize="20dp"
+                                android:padding="10dp"
+                                android:textColor="@color/Wight"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="5dp"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/pricetxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="No data wait..."
+                                android:textSize="20dp"
+                                android:padding="5dp"
+                                android:textColor="@color/Wight"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="5dp"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/quantity"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="No data wait..."
+                                android:textSize="20dp"
+                                android:padding="5dp"
+                                android:textColor="@color/Wight"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="5dp"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="350dp"-->
+<!--                        android:layout_height="150dp"-->
+<!--                        android:orientation="horizontal"-->
+<!--                        android:layout_marginTop="2dp"-->
+<!--                        android:layout_marginBottom="10dp"-->
+<!--                        android:gravity="center">-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:background="@drawable/conner_radius"-->
+<!--                            android:backgroundTint="@color/blackpare"-->
+<!--                            android:alpha="0.8"-->
+<!--                            android:orientation="vertical">-->
+<!--                        </LinearLayout>-->
+<!--                    </RelativeLayout>-->
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:gravity="center">
+    <Button
+        android:onClick="PlaceOder"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/radius_sign_us"
+        android:backgroundTint="@color/orange1"
+        android:hint="Place order"
+        android:textColorHint="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
+        <Button
+            android:onClick="Buy_now"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radius_sign_us"
+            android:hint="Buy now"
+            android:textColorHint="@color/orange1"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+</LinearLayout>
+
+</RelativeLayout>
+

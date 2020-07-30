@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/conner_radius">
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="220dp"
+        android:backgroundTint="@color/pareblack"
+        android:background="@drawable/conner_radius">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Dialogue_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="worning !"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/red"/>
+
+        <TextView
+            android:id="@+id/Dialogue_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="You\ncant\ncontinue\nselect your field"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textSize="18dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+        <TextView
+            android:id="@+id/Dialogue_text_ok"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:text="Ok"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/Dialogue_text_cancel"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+</LinearLayout>
